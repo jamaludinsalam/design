@@ -1,0 +1,683 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*  ========================================================= MOBILE Version ========================================================= */
+@media (min-width: 500px){
+    .nav-link {
+        color: #1E2A54;
+        text-transform: uppercase;
+    }
+}
+
+
+
+@media (max-width: 767.98px) { 
+  .carousel-caption h1 {
+    font-size: 1.5em;
+  }
+  .carousel-caption p {
+    font-size: .8em;
+  }
+ }
+ 
+
+/* ======================================================= end MOBILE Version =========================================================== */
+
+
+/* ================================================================================== */
+/* ================================== HEADER ======================================== */
+/* ================================================================================== */
+
+.main-nav {
+    background-color: #E0E0EA;
+    font-family: 'Viga', sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: .75em;
+}
+
+.navbar-nav {
+   text-align: left;
+   margin-left: 20px;
+}
+
+.navbar-brand img{
+    height: 50px;
+    width: auto;
+    font-size: .6em;
+    text-align: center;
+    margin-left: 20px;
+    /* margin: 5px 5px 5px 10px; */
+    /* padding: 5px auto 5px 5px; */
+}
+
+.dropdown-menu {
+    margin-top: 10px;
+    font-size: 1em;
+    border: none;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.dropdown-menu a:hover{
+    background-color: rgba(224, 224, 234, 0.534);
+    margin: 0 ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+}
+.nav-link {
+    color: #1E2A54;
+    
+}
+
+.dropdown-divider {
+    color: #555;
+}
+
+/* ============== Search ==================== */
+.openBtn {
+    background: #f1f1f1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .openBtn:hover {
+    background: #bbb;
+  }
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
+  }
+  
+  /* The content */
+  .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+  }
+  
+  /* Close button */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  /* Style the search field */
+  .overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+  }
+  
+  .overlay input[type=text]:hover {
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  .overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .overlay button:hover {
+    background: #bbb;
+  }
+
+/* ================================================================================== */
+/* ================================== End HEADER ======================================== */
+/* ================================================================================== */
+
+
+/* ==================================================================================== */
+/* ================================== SECTIONS ======================================== */
+/* ==================================================================================== */
+
+
+
+/* ======================== CAROUSEL ================================ */
+
+.carousel {
+     
+    position: relative;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50vh;
+    bottom: auto;
+  }
+
+  .section-carousel .carousel-inner {
+    height: 80vh;
+    
+  }
+
+  .bg-img {
+    border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    height: 80vh;
+    background-size:  cover;
+    background-repeat: no-repeat;
+  }
+
+.section-carousel .carousel::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.2));
+}
+
+  #myCarousel {
+      height: 80vh;
+  }
+
+/* ======================== End CAROUSEL ================================ */
+
+
+
+
+/* ======================== Running Text ===================================== */
+.red {
+  padding-top: 20px;
+  background-color: crimson;
+}
+
+#marquee{
+  margin-bottom: 0;
+  height: 100%;
+  position: relative;
+}
+#marquee a{
+  text-decoration: none ;
+}
+#marquee marquee {
+  color: white;
+  background-color: crimson;
+  top: 0;
+  margin-bottom: 0;
+  padding: 10px 5px 10px 5px;
+  bottom: 0;
+  
+}
+
+/* ======================== end Running Text ===================================== */
+
+
+/* ========================= Features ============================================ */
+#features{
+ 
+  height: 100%;
+  background-color: #E0E0EA;
+  width: 100%;
+  left: 0;
+  margin-top: -10px;
+  margin-bottom: 0px;
+  
+}
+#features h1 {
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #000F31;
+  text-transform: uppercase;
+}
+#features p {
+  font-family: 'Raleway', sans-serif;
+  font-size: .7em;
+  font-weight: 300;
+  color: #4A4A4A;
+  font-style: italic;
+  /* margin-top: 20%; */
+}
+#features a {
+  padding: 10px 20px 10px 20px;
+  font-size: .7em;
+  text-transform: uppercase;
+}
+#features .btn {
+  margin-bottom: -150px;
+  border-radius: 20px;
+  background-color: #2D0243;
+  border: #2D0243;
+}
+#features img{
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+#features .center {
+  background-color: #E0E0EA;
+  padding: 50px auto auto auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#features .box {
+  background-color: white;
+  border-radius: 20px;
+  height: 370px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  
+}
+#features .container {
+  text-align: center;
+}
+
+.feature-title  {
+  height: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.feature-content {
+  height: 100px;
+  padding: .75rem 1rem;
+  vertical-align: middle;
+  
+}
+.feature p {
+  vertical-align: middle;
+}
+
+/* ========================= EndFeatures ========================================= */
+
+
+
+/* ========================= BERITA ========================================= */
+#berita {
+  margin-top: 25px;
+  background-repeat: no-repeat;
+  background-image: url('./img/bg-berita.svg');
+  background-size: 40%; 
+  background-position: center left;
+  /* background-attachment: fixed; */
+}
+
+
+@media (max-width:767.98px) {
+  .title-section {
+    margin-top: -25px;
+    margin-right: 35%;
+    margin-left: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    text-align: center;
+    z-index : -1;
+  }
+  .btn-title{
+    background-color: #000F31;
+    width: 100%;
+    margin-top: -35px;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    border: none;
+    
+  }
+}
+@media (min-width:768px) {
+  .title-section {
+    margin-top: -25px;
+    margin-right: 35%;
+    margin-left: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    text-align: center;
+    z-index : -1;
+  }
+  .btn-title{
+    background-color: #000F31;
+    width: 100%;
+    margin-top: -35px;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    border: none;
+    
+  }
+}
+@media (min-width:992px) {
+  .title-section {
+    margin-top: -25px;
+    margin-right: 35%;
+    margin-left: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    text-align: center;
+    z-index : -1;
+  }
+  .btn-title{
+    background-color: #000F31;
+    width: 80%;
+    margin-top: -35px;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    border: none;
+    
+  }
+}
+
+#berita{
+  width: 100%;
+  height: 100%;
+  
+}
+#berita .container {
+  /* color: white; */
+  text-align: center;
+  flex-wrap: wrap;
+}
+#berita h1{
+  font-family: 'Viga', sans-serif;
+  font-size: 1em;
+  padding-top: 10px;
+  color: white;
+}
+#berita .list-berita{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.content .card-row {
+  margin-bottom: 50px;
+  margin-right: -200px;
+  text-align: center;
+}
+.berita-card {
+  border: none;
+}
+
+/* =================== Media Query - List App ===================== */
+
+@media(max-width: 767.98px){
+  .list-app{
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-top: 20px;
+  }
+  .list-app img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .app .list-app img{
+    width: 100%;
+    text-align: center;
+  }
+
+}
+@media(min-width: 768px){
+  .list-app{
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-top: 20px;
+  }
+  .list-app img{
+    width: 80%;
+    margin-bottom: 20px;
+    opacity: 1;
+  }
+  .app .list-app img{
+    width: 100%;
+    text-align: center;
+  }
+
+}
+@media(min-width: 992px){
+  .list-app{
+    text-align: center;
+    height: 100%;
+    width: 8%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 0;
+  }
+  .list-app img{
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .app .list-app img{
+    width: 50%;
+    text-align: center;
+  }
+
+}
+@media(min-width: 1200px){
+  .list-app{
+    text-align: center;
+    height: 100%;
+    width: 8%;
+    margin-right: -20px;
+    margin-left: 20px;
+    padding-top: 0;
+  }
+  .list-app img{
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .app .list-app img{
+    width: 80%;
+    text-align: center;
+  }
+
+}
+/* =================== EndMedia Query - List App ===================== */
+
+
+/* ================ Media Query - Berita Card ================== */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 767.98px) { 
+  .berita-card{
+    width: 100%;
+    text-align: left;
+    padding: .5rem;
+  }
+  .col-berita-card{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 5%;
+    
+  }
+ }
+
+@media (min-width: 768px) { 
+  .berita-card{
+    width: 18rem;
+    text-align: left;
+    padding: 0;
+  }
+  .col-berita-card{
+    margin-right: 8%;
+    margin-left: 50px;
+    margin-bottom: 5%;
+    
+  }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .berita-card{
+    width: 17rem;
+    text-align: left;
+    
+  }
+  .col-berita-card{
+    margin-right: 10%;
+    margin-left: 6%;
+    margin-bottom: 2%;
+    
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .berita-card{
+    width: 21rem;
+    text-align: left;
+    padding: 0;
+  }
+  .col-berita-card{
+    margin-right: 9%;
+    margin-left: 6%;
+    margin-bottom: 4%;
+    
+  }
+ }
+
+/* ================ End Media Query - Berita Card ==================== */
+
+.col-berita-card{
+  padding-right: 1rem;
+}
+.card-body{
+  padding: .8rem;
+} 
+.berita-card h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: .6em;
+  color: #818181;
+}
+.berita-card h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: rgb(58, 57, 57);
+}
+.berita-card p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: .8em;
+  color: #494949;
+  padding-top: 0px;
+  
+}
+.list-berita > div.card {
+  height: calc(100% - 15px);
+}
+
+
+.carousel-multi-item .carousel-indicators li {
+  background-color: #000F31;
+}
+.berita-mobile .carousel-inner p {
+  margin-bottom: 10px; 
+}
+
+
+/* ========================= End BERITA ===================================== */
+
+
+/* ========================= STATISTIK ========================================= */
+
+#statistik {
+  margin-top: 50px;
+  padding-top: 20%;
+  background-repeat: no-repeat;
+  background-image: url('./img/bg-statistik.svg');
+  background-size: 40%; 
+  background-position: center right;
+  /* background-attachment: fixed; */
+}
+
+
+
+
+
+/* ========================= END STATISTIK ========================================= */
+
+
+/* ==================================================================================== */
+/* ================================== END SECTIONS ==================================== */
+/* ==================================================================================== */
+
+
+
+
+
+
