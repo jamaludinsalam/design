@@ -11,12 +11,14 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="resources/css/style2.css" type="text/css">
 		<link rel="stylesheet" href="vendors/css/sal.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
 
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500i,700|Raleway:400,500,500i,600,700,800|Viga&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/vendors/fonts/fontawesome/all.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <title>Hello, world!</title>
   	</head>
 	<body>
@@ -408,12 +410,22 @@
 						<div class="app">
 							<img src="resources/css/img/hotline.svg" alt="">
 						</div>
-						<div class="app">
+						<div class="app2">
+							<div class="row no-gutters">
+								<div class="col-lg list-app2 right mr-0" >
+									<a href="#"><img src="resources/css/img/tegas.png" alt=""></a>
+								</div>
+								<div class="col-lg list-app2 left ml-0" style="margin-right: 0; width: auto; right: 0;">
+									<a href="#"><img src="resources/css/img/layak.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="app">
 							<a href="#"><img src="resources/css/img/tegas.png" alt=""></a>
 						</div>		
 						<div class="app">
 							<a href="#"><img src="resources/css/img/layak.png" alt=""></a>
-						</div>
+						</div> -->
 						<!-- <div class="app">
 							<div class="row list-app2">
 								<div class="col-6 list-appL">
@@ -438,40 +450,19 @@
 		<!-- STATISTIK -->
 		<section id="statistik" class="statistik">
 			<div class="container">
-				<div class="row">
-					<!-- Users By Device Stats -->
-					<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-							<div class="card card-small h-100">
-							  <div class="card-header border-bottom">
-								<h6 class="m-0">Users by device</h6>
-							  </div>
-							  <div class="card-body d-flex py-0">
-								<canvas height="220" class="blog-users-by-device m-auto"></canvas>
-							  </div>
-							  <div class="card-footer border-top">
-								<div class="row">
-								  <div class="col">
-									<select class="custom-select custom-select-sm" style="max-width: 130px;">
-									  <option selected>Last Week</option>
-									  <option value="1">Today</option>
-									  <option value="2">Last Month</option>
-									  <option value="3">Last Year</option>
-									</select>
-								  </div>
-								  <div class="col text-right view-report">
-									<a href="#">Full report &rarr;</a>
-								  </div>
-								</div>
-							  </div>
-							</div>
-						  </div>
-						  <!-- End Users By Device Stats -->
-					<!-- <img src="./resources/css/img/chart.png" alt=""> -->
-					<h1>asdsad</h1>
-					<h1>asdsad</h1>
-					<h2>asdasd</h2>
-					<h2>asdasd</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quidem odit iure perspiciatis dicta, sapiente harum aut rerum repudiandae ratione eos ducimus provident rem veniam laboriosam non nesciunt quos quia.</p>
+				<div class="col-lg left ">
+					<div class="row row_statistik left">
+						<div class="col">
+							<h1>Statistik LPSK</h1>
+							<canvas id="myChart" ></canvas>
+						</div>
+					</div>
+					<div class="row row_statistik left">
+						<div class="col">
+							<h1>Statistik LPSK</h1>
+							<canvas id="myChart2"></canvas>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -480,6 +471,35 @@
 
 
 
+
+
+
+		<!-- FOOTER -->
+		<footer>
+			<!-- <div class="container-fluid"> -->
+			<div class="row">
+				<div class="col-lg-4 " >
+					<h1><strong> LPSK (Lembaga Perlindungan Saksi dan Korban)</strong></h1>
+					
+					<p>Jl. Raya Bogor Km.24 No.47-49, Susukan Ciracas</p>
+					<p>Jakarta Timur 13750</p>
+					<p>Telp. (021)29681560 Fax.(021)29681551, Email. lpsk_ri@lpsk.go.id</p>
+				</div>
+				<div class="col-lg-4 center">
+					<h2>&copy; Copyright 2019 </h2>
+				</div>
+				<hr>
+				<div class="col-lg-4 right">
+					<a href=""><i><img src="resources/css/img/instagram.svg" alt=""></i></a>
+					<a href=""><i><img src="resources/css/img/twitter.svg" alt=""></i></a>
+					<a href=""><i><img src="resources/css/img/facebook.svg" alt=""></i></a>
+					<a href=""><i><img src="resources/css/img/youtube.svg" alt=""></i></a>
+				</div>
+			</div>
+			<div class="row row2"></div>
+		<!-- </div> -->
+		</footer>
+		<!-- END FOOTER -->
 
 
 
@@ -495,7 +515,10 @@
 		
 		<!-- Custom Javascript -->
 		<script src="resources/js/script.js"></script>
+		<script src="resources/js/chart.js"></script>
 		<script src="vendors/js/sal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
 		<script>
 			sal();
 		</script>
