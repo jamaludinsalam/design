@@ -3,7 +3,7 @@ let labels = ['Saksi', 'Ahli', 'Perlindungan Anak', 'Pelapor'];
 let colorHex = ['#FB3640','#EFCA08','#43AA8B', '#253D5B'];
 
 let myChart = new Chart(ctx, {
-    type: 'pie',
+    type: 'doughnut',
     data: {
         datasets: [{
             label: '# of Kasus',
@@ -14,7 +14,19 @@ let myChart = new Chart(ctx, {
         fontSize: 100,
     },
     options: {
-        responsive: true
+        responsive: true,
+        legend: {
+            display:true,
+            position: 'right'
+        },
+        layout: {
+            padding: {
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 50
+            }
+        }
     }
 });
 
@@ -34,6 +46,18 @@ let myChart2 = new Chart(ctx2, {
         fontSize: 100,
     },
     options: {
-        responsive: true
+        responsive: true,
+        legend: {
+            display:true,
+            position: 'right',
+        },
+        layout: {
+            padding: {
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 50
+            }
+        }
     }
 })
