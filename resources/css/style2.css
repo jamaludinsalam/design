@@ -809,8 +809,8 @@ canvas {
 #cerita{
   background-color: #E0E0EA;
   width: 100%;
-  /* margin-top: 10%;
-  padding-bottom: 10%; */
+  margin-top: 10%;
+  padding-bottom: 10%;
   
 }
 .btn-title-cerita{
@@ -982,10 +982,54 @@ canvas {
     width: 100%;
   }
   #cerita .bg-img {
-    height: 60vh;
+    height: 100vmin;
     width: 100%;
   }
+  #cerita-carousel .carousel-indicators {
+    bottom: -20px;
+  }
+  #cerita-carousel .carousel-inner {
+    height: 100%;
+    margin-bottom: 10%;;
+  }
 }
+@media(min-width: 400px){
+  #cerita .bg-img {
+    height: 78vmin;
+    width: 100%;
+  }
+  #cerita-carousel .carousel-indicators {
+    bottom: -35px;
+  }
+  #cerita-carousel .carousel-inner {
+    margin-bottom:5%;
+  }
+}
+@media(min-width: 500px){
+  #cerita .bg-img {
+    height: 65vmin;
+    width: 100%;
+  }
+  #cerita-carousel .carousel-indicators {
+    bottom: -20px;
+  }
+  #cerita-carousel .carousel-inner {
+    margin-bottom: 5%;
+  }
+}
+@media(min-width: 650px){
+  #cerita .bg-img {
+    height: 55vmin;
+    width: 100%;
+  }
+  #cerita-carousel .carousel-indicators {
+    bottom: -30px;
+  }
+  #cerita-carousel .carousel-inner {
+    margin-bottom: 5%;
+  }
+}
+
 @media(min-width: 768px){
   #cerita{
     margin-top: 10%;
@@ -1031,8 +1075,14 @@ canvas {
     width: 100%;
   }
   #cerita .bg-img {
-    height: 80vh;
+    height: 60vmin;
     width: 100%;
+  }
+  #cerita-carousel .carousel-indicators {
+    bottom: -35px;
+  }
+  #cerita-carousel .carousel-inner {
+    margin-bottom:1%;
   }
 }
 @media(min-width: 992px) {
@@ -1068,8 +1118,14 @@ canvas {
     width: 100%;
   }
   #cerita .bg-img {
-    height: 30vh;
+    height: 20vmin;
     width: 100%;
+  }
+  #cerita-carousel .carousel-indicators {
+    bottom: -35px;
+  }
+  #cerita-carousel .carousel-inner {
+    margin-bottom:1%;
   }
   #cerita .carousel-indicators li{
     border-radius: 12px;
@@ -1117,12 +1173,32 @@ canvas {
     height: 0vh;
   }
   #cerita .bg-img {
-    height: 30vh;
+    height: 24vmin;
+    width: 100%;
+  }
+  #cerita-carousel .carousel-indicators {
+    bottom: -35px;
+  }
+  #cerita-carousel .carousel-inner {
+    margin-bottom:0%;
   }
 }
 @media(min-width: 1500px){
   .btn-title-cerita {
     margin-top: -9%;
+  }
+  #cerita {
+    
+  }
+  #cerita .bg-img {
+    height: 20vmin;
+    width: 100%;
+  }
+  #cerita-carousel .carousel-indicators {
+    bottom: -40px;
+  }
+  #cerita-carousel .carousel-inner {
+    margin-bottom:1%;
   }
 }
 @media(min-width: 1600px){
