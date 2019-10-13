@@ -764,16 +764,24 @@ canvas {
   #statistik .left {
     margin-bottom: 30%;
   }
+  #statistik h1{
+    font-size: .8em;
+    margin-bottom: 10%;
+  }
   .col-custom{
     width: 100%;
     margin-left: 0;
-    padding-left: 5%;
-    padding-right: 25%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
 }
 @media (min-width: 768px){
   .statistik {
     background-size: 60%; 
+  }
+  #statistik h1{
+    font-size: 1em;
+    margin-bottom: 10%;
   }
   .col-custom{
     width: 100%;
@@ -785,6 +793,10 @@ canvas {
 @media (min-width: 992px){
   .statistik {
     background-size: 40%; 
+  }
+  #statistik h1{
+    font-size: 1.1em;
+    margin-bottom: 10%;
   }
   #statistik .left {
     margin-bottom: 10%;
