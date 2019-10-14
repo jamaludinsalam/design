@@ -207,7 +207,7 @@ html {
 }
 .title .jumbotron {
     height: 60%;
-    background-image: url('./../css/img/bg-title2.svg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('./../css/img/bg-title2.svg');
     background-size: cover;
     background-repeat: no-repeat;
     border: none;

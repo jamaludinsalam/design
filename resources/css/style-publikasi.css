@@ -207,7 +207,7 @@ html {
 }
 .title .jumbotron {
     height: 60%;
-    background-image: url('./../css/img/bg-title2.svg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('./../css/img/bg-title2.svg');
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
@@ -404,37 +404,465 @@ html {
   }
 }
 
-/* ====================================== End Pejabat Struktural ============================== */
+/* ====================================== End Buku ============================== */
 
 
-/* ======================================  Pejabat Struktural  Details============================== */
-
-/* ====================================== Road Map ==================================================== */
-.roadmaps {
+/* ====================================== Buletin ================================== */
+.buletin {
   padding-top: 10%;
   padding-bottom: 10%;
-  
 }
-.roadmap h1 {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  color: rgb(51, 51, 51);
+.buletin .img-struktur img{
+  text-align: center;
+  width: auto;
+  height: 200px;
 }
-.roadmap {
+.buletin .img-struktur {
   text-align: center;
 }
-.roadmap .btn-custom {
+.buletin h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: rgb(49, 49, 49);
+  /* padding-top: 5%; */
+}
+.buletin h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.buletin h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: .8em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.buletin p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+    font-size: .8em;
+}
+.buletin a{
+  text-decoration: none;
+}
+.buletin hr .buletinhr {
+  border: 2px solid #555;
+  width: 50%;
+}
+.buletin .btn-custom {
+  margin-top: 3%;
   background-color: #12295C;
   border-color:  #12295C;
 }
-/* ====================================== End Road Map ================================================ */
+
+@media(min-width: 300px){
+  .buletin h1 {
+    font-size: 1.1em;
+  }
+  .buletin h2 {
+    font-size: .8em;
+  }
+  .buletin h3 {
+    font-size: .8em;
+  }
+  .buletin p {
+    font-size: .8em;
+  }
+  .buletinkanan {
+    /* margin-left: 5%; */
+    text-align: center;
+  }
+}
+@media(min-width: 576px){
+  .buletinkanan {
+    text-align: left;
+  }
+}
+
+/* ====================================== End Buletin ============================== */
 
 
+/* ====================================== Jurnal ================================== */
+.jurnal {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.jurnal .img-struktur img{
+  text-align: center;
+  width: auto;
+  height: 200px;
+}
+.jurnal .img-struktur {
+  text-align: center;
+}
+.jurnal h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: rgb(49, 49, 49);
+  /* padding-top: 5%; */
+}
+.jurnal h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.jurnal h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: .8em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.jurnal p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+    font-size: .8em;
+}
+.jurnal a{
+  text-decoration: none;
+}
+.jurnal hr .jurnalhr {
+  border: 2px solid #555;
+  width: 50%;
+}
+.jurnal .btn-custom {
+  margin-top: 3%;
+  background-color: #12295C;
+  border-color:  #12295C;
+}
+
+@media(min-width: 300px){
+  .jurnal h1 {
+    font-size: 1.1em;
+  }
+  .jurnal h2 {
+    font-size: .8em;
+  }
+  .jurnal h3 {
+    font-size: .8em;
+  }
+  .jurnal p {
+    font-size: .8em;
+  }
+  .jurnalkanan {
+    /* margin-left: 5%; */
+    text-align: center;
+  }
+}
+@media(min-width: 576px){
+  .jurnalkanan {
+    text-align: left;
+  }
+}
+
+/* ====================================== End jurnal ============================== */
 
 
+/* ====================================== Informasi ================================== */
+.informasi {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.informasi .img-struktur img{
+  text-align: center;
+  width: auto;
+  height: 200px;
+}
+.informasi .img-struktur {
+  text-align: center;
+}
+.informasi h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: rgb(49, 49, 49);
+  /* padding-top: 5%; */
+}
+.informasi h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.informasi h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: .8em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.informasi p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+    font-size: .8em;
+}
+.informasi a{
+  text-decoration: none;
+}
+.informasi hr .informasihr {
+  border: 2px solid #555;
+  width: 50%;
+}
+.informasi .btn-custom {
+  margin-top: 3%;
+  background-color: #12295C;
+  border-color:  #12295C;
+}
+
+@media(min-width: 300px){
+  .informasi h1 {
+    font-size: 1.1em;
+  }
+  .informasi h2 {
+    font-size: .8em;
+  }
+  .informasi h3 {
+    font-size: .8em;
+  }
+  .informasi p {
+    font-size: .8em;
+  }
+  .informasikanan {
+    /* margin-left: 5%; */
+    text-align: center;
+  }
+}
+@media(min-width: 576px){
+  .informasikanan {
+    text-align: left;
+  }
+}
+
+/* ====================================== End informasi ============================== */
 
 
+/* ====================================== Artikel ================================== */
+.artikel {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.artikel .img-struktur img{
+  text-align: center;
+  width: auto;
+  height: 200px;
+}
+.artikel .img-struktur {
+  text-align: center;
+}
+.artikel h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: rgb(49, 49, 49);
+  /* padding-top: 5%; */
+}
+.artikel h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.artikel h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: .8em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.artikel p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+    font-size: .8em;
+}
+.artikel a{
+  text-decoration: none;
+}
+.artikel hr .artikelhr {
+  border: 2px solid #555;
+  width: 50%;
+}
+.artikel .btn-custom {
+  margin-top: 3%;
+  background-color: #12295C;
+  border-color:  #12295C;
+}
 
+@media(min-width: 300px){
+  .artikel h1 {
+    font-size: 1.1em;
+  }
+  .artikel h2 {
+    font-size: .8em;
+  }
+  .artikel h3 {
+    font-size: .8em;
+  }
+  .artikel p {
+    font-size: .8em;
+  }
+  .artikelkanan {
+    /* margin-left: 5%; */
+    text-align: center;
+  }
+}
+@media(min-width: 576px){
+  .artikelkanan {
+    text-align: left;
+  }
+}
+
+/* ====================================== End artikel ============================== */
+
+/* ======================================Kegiatan================================== */
+.kegiatan {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.kegiatan .img-struktur img{
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+}
+.kegiatan .img-struktur {
+  text-align: center;
+  width: 100%;
+  min-height: 200px;
+  background-size: cover;
+}
+.kegiatan h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: rgb(49, 49, 49);
+  /* padding-top: 5%; */
+}
+.kegiatan h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.kegiatan h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: .8em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.kegiatan p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+.kegiatan a{
+  text-decoration: none;
+}
+.kegiatan hr .kegiatanhr {
+  border: 2px solid #555;
+  width: 50%;
+}
+.kegiatan .btn-custom {
+  margin-top: 3%;
+  background-color: #12295C;
+  border-color:  #12295C;
+}
+
+@media(min-width: 300px){
+  .kegiatan h1 {
+    font-size: 1.1em;
+  }
+  .kegiatan h2 {
+    font-size: .8em;
+  }
+  .kegiatan h3 {
+    font-size: .8em;
+  }
+  .kegiatan p {
+    font-size: .8em;
+  }
+  .kegiatankanan {
+    /* margin-left: 5%; */
+    text-align: center;
+  }
+}
+@media(min-width: 576px){
+  .kegiatankanan {
+    text-align: left;
+  }
+}
+@media(min-width: 768px){
+  .kegiatan p {
+      font-size: 1em;
+      line-height: 1.8em;
+  }
+  .kegiatan h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+}
+
+
+/* ====================================== End kegiatan ============================== */
+
+/* ========================================  Categories ============================ */
+.categories {
+  padding-bottom: 10%;
+  color: #535353;
+}
+.list-group-item.active {
+  background-color: #233059;
+  border-color: #233059;
+  color: white;
+}
+.list-group-item-action {
+  color: #8D8D8D;
+}
+.search-container {
+  /* float: left; */
+  margin-bottom: 15%;;
+}
+
+input[type=text] {
+  padding: 10px;
+  padding-left: 15px;
+  /* padding-right: 5px; */
+  margin-top: 8px;
+  font-size: .9em;
+  border: 1.5px solid #8D8D8D;
+  border-radius: 20px;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: 1.5px solid #8D8D8D;
+  /* border-left: none; */
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+ .search-container button:hover {
+  background: #ccc;
+}
+
+/* ======================================== End Categories ============================ */
 /* ==================================== Footer ===========================================s */
 
 .rowbiru{
