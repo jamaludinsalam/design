@@ -19,6 +19,27 @@ html {
     margin: 0 auto;
 }
 
+
+
+#image-box-all{
+  display: inline-block;
+margin: .4vw;
+overflow: hidden; 
+border-radius: 10px ;
+}
+#image-box-all img{
+display: block;
+transition: transform 1s;
+}
+#image-box-all:hover img {
+transform: scale(1.2);
+transform-origin: 50% 50% ;
+}
+.image-box-cover-all{
+object-fit: cover;
+height: 250px;
+width: 100%;
+}
 /*  ========================================================= MOBILE Version ========================================================= */
 @media (min-width: 300px){
     .nav-link {
