@@ -21,13 +21,15 @@ html {
 
 #image-box-all{
   display: inline-block;
-margin: .4vw;
-overflow: hidden; 
-border-radius: 10px ;
+  margin: .4vw;
+  overflow: hidden; 
+  border-radius: 10px ;
+  
 }
 #image-box-all img{
 display: block;
 transition: transform 1s;
+
 }
 #image-box-all:hover img {
 transform: scale(1.2);
@@ -37,6 +39,7 @@ transform-origin: 50% 50% ;
 object-fit: cover;
 height: 250px;
 width: 100%;
+
 }
 
 
@@ -421,38 +424,66 @@ width: 100%;
 }
 /* ================================== end Sejarah LPSK  ====================================== */
 
-/* ============================ Visi dan Misi ======================================== */
-.visirow {
+/* ============================ Kontak kami ======================================== */
+.kontakkami {
   padding-top: 5%;
   padding-bottom: 10%;
 }
-
-.visi {
+.desckontak{
+  padding-top: 7%;
+  padding-bottom: 7%;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  background-color: white;
+  transition: .2s;
+}
+.desckontak:hover{
+  transform: scale(1.02);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.desckontak1{
+  padding-top: 10%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 10%;
+  /* border: 1px solid #555; */
+}
+.kontakkami {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.visi h1 {
-  color: rgb(63, 63, 63);
-  letter-spacing: 5px;;
+.kontakkami h1 {
+  color: rgb(83, 83, 83);
+  font-size: 1.3em;
 }
-.visi p {
+.kontakkami p {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: .9em;
-  color: #5E5E5E;
-  line-height: 1.7em;;
+  color: rgb(117, 116, 116);
+  line-height: 2em;
+  letter-spacing: 1px;
+  padding-left: 13%;
+}
+.kontakgroup span{
+  padding-left: 8%;
+}
+.kontakgroup {
+  
+ 
 }
 
 
-
-.visi .how-bor2,
-.visi .how-bor1 {
+.kontakkami .how-bor2,
+.kontakkami .how-bor1 {
   position: relative;
   z-index: 1;
 }
 
-.visi .how-bor2::before,
-.visi .how-bor1::before {
+.kontakkami .how-bor2::before,
+.kontakkami .how-bor1::before {
   content: "";
   display: block;
   position: absolute;
@@ -462,180 +493,146 @@ width: 100%;
   border: 3px solid #ccc;
 }
 
-.visi .how-bor1::before {
+.kontakkami .how-bor1::before {
   bottom: -21px;
-  left: 21px;
 }
 
-.visi .hov-img{
+.kontakkami .hov-img{
   display: block;
   overflow: hidden;
 }
-.visi .hov-img img {
+.kontakkami .hov-img img {
   width: 100%;
 }
 @media(min-width: 300px){
-  .visi .how-bor2::before,
-.visi .how-bor1::before {
+  .kontakkami .how-bor2::before,
+.kontakkami .how-bor1::before {
   padding-right: 40%;
-width: 100%;
+  width: 100%;
   }
 }
 @media(min-width: 450px){
-  .visi .how-bor2::before,
-  .visi .how-bor1::before {
+  .kontakkami .how-bor2::before,
+  .kontakkami .how-bor1::before {
   padding-right: 40%;
   width: 90%;
   }
 }
 @media(min-width: 480px){
-  .visi .how-bor2::before,
-  .visi .how-bor1::before {
+  .kontakkami .how-bor2::before,
+  .kontakkami .how-bor1::before {
   padding-right: 40%;
   width: 70%;
   }
 }
 @media(min-width: 768px){
-  .visi .how-bor2::before,
-  .visi .how-bor1::before {
+  .kontakkami .how-bor2::before,
+  .kontakkami .how-bor1::before {
     padding-right: 40%;
     width: 100%;
     padding-top: 20%;
   }
-  .visi .how-bor2,
-  .visi .how-bor1 {
+  .kontakkami .how-bor2,
+  .kontakkami .how-bor1 {
     position: relative;
     z-index: 1;
   }
 
-.visi .how-bor2::before,
-.visi .how-bor1::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  border: 3px solid #ccc;
+  .kontakkami .how-bor2::before,
+  .kontakkami .how-bor1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #ccc;
+  }
+
+  .kontakkami .how-bor1::before {
+    bottom: -21px;
+    left: -21px;
+  }
+
+  .kontakkami .hov-img{
+    display: block;
+    overflow: hidden;
+  }
+  .kontakkami .hov-img img {
+    width: 100%;
+  }
+  .kontakkami {
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+  .desckontak{
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .desckontak:hover{
+    transform: scale(1.02);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  }
+  .desckontak1{
+    padding-top: 10%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+@media(min-width:992px){
+  .kontakkami {
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+  .desckontak{
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .desckontak:hover{
+    transform: scale(1.02);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  }
+  .desckontak1{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 
-.visi .how-bor1::before {
-  bottom: -21px;
-  left: 21px;
+
+/* ================================== Endkontakkami ======================================== */
+
+
+
+
+
+
+/* ============================= MAPS ================================================== */
+/* .maps{
+  padding-top: 10%;
 }
 
-.visi .hov-img{
-  display: block;
+.responsive-map-container {
+  position: relative;
+  margin-bottom: 0;
+  padding-top: 50%;
+  height: 0;
   overflow: hidden;
 }
-.visi .hov-img img {
-  width: 100%;
-}
-}
 
-
-/* ================================== End Visi dan Misi ======================================== */
-
-
-/* ============================= Kewenangan LPSK ================================================== */
-
-#kewenangan{
- 
-  height: 100%;
-  background-color: #E0E0EA;
-  width: 100%;
+.responsive-map-container iframe,   
+.responsive-map-container object,  
+.responsive-map-container embed {
+  position: absolute;
+  top: 0;
   left: 0;
-  margin-top: -10px;
-  margin-bottom: 0px;
-  
-}
-#kewenangan h1 {
-  font-size: 1em;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  color: #000F31;
-  text-transform: uppercase;
-}
-#kewenangan p {
-  font-family: 'Raleway', sans-serif;
-  font-size: .7em;
-  font-weight: 300;
-  color: #4A4A4A;
-  font-style: italic;
-  /* margin-top: 20%; */
-}
-#kewenangan a {
-  padding: 10px 20px 10px 20px;
-  font-size: .7em;
-  text-transform: uppercase;
-}
-#kewenangan .btn {
-  margin-bottom: -150px;
-  border-radius: 20px;
-  background-color: #2D0243;
-  border: #2D0243;
-}
-#kewenangan img{
-  height: 70px;
-  margin-bottom: 20px;
-}
+  width: 100%;
+  height: 300px;
+} */
 
-#kewenangan .center {
-  background-color: #E0E0EA;
-  /* padding: 50px auto auto auto; */
-  /* padding-top: 100px; */
-  /* padding-bottom: 100px; */
-}
-
-#kewenangan .box {
-  background-color: white;
-  border-radius: 20px;
-  height: 370px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 30px;
-  padding-right: 10px;
-  padding-left: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  
-}
-#kewenangan .container {
-  text-align: center;
-}
-
-.kewenangan-title  {
-  height: 70px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.kewenangan-content {
-  height: 100px;
-  padding: .75rem 1rem;
-  vertical-align: middle;
-  
-}
-.kewenangan p {
-  vertical-align: middle;
-}
-
-.kewenangan h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 2em;
-  color: #12295C;
-}
-.kewenangan h2::after{
-  content: '';
-  display: block;
-  border-bottom: 3px solid #12295C;
-  padding-top: 2%;
-  margin-left: 45%;
-  margin-right: 45%;
-  text-shadow: -1px -1px 1px rgba(17, 17, 17, 0.205), 2px 2px 1px #36363663;
-}
-
-/* ==================================ENd Kewenangan LPSK =========================================== */
+/* ==================================ENd MAPS =========================================== */
 
 
 .rowbiru{
@@ -643,6 +640,7 @@ width: 100%;
   height: 100px;
   right: 0;
   left: 0;
+  top: -20%;
 }
 
 footer h1 {

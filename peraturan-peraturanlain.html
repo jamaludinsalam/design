@@ -9,14 +9,15 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="resources/css/style-publikasi.css" type="text/css">
+		<link rel="stylesheet" href="resources/css/style-peraturan.css" type="text/css">
 		<link rel="stylesheet" href="vendors/css/sal.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+		<link rel="stylesheet" href="vendors/lightgallery/css/lightgallery.css" type="text/css">
 
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500i,700|Raleway:400,500,500i,600,700,800|Viga&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="vendors/fonts/fontawesome/all.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <title>Lembaga Perlindungan Saksi dan Korban </title>
@@ -90,7 +91,7 @@
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="peraturan-lpsk.html">Peraturan LPSK</a> 
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item " href="peraturan-peraturanlain.html">Peraturan Lain</a> 
+							<a class="dropdown-item active" href="peraturan-peraturanlain.html">Peraturan Lain</a> 
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="peraturan-kodeetik.html">Kode Etik</a> 
 						</div>
@@ -147,7 +148,6 @@
 						<a class="nav-link" href="kontakkami.html">Kontak Kami</a>
 					</li>
 					
-					
 				</ul>
 			</div>
 			<div id="myOverlay" class="overlay">
@@ -168,13 +168,13 @@
         <section class="title" id="title">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                  <h1 class="display-4">Informasi</h1>
+                  <h1 class="display-4">Peraturan</h1>
                   <p class="lead">
                       <nav aria-label="breadcrumb ">
                         <ol class="breadcrumb d-flex justify-content-center">
                             <li class="breadcrumb-item"><a href="#"><img src="resources/css/img/home.svg" alt=""></a></li>
-                            <li class="breadcrumb-item"><a href="#">Publikasi</a></li>
-                            <li class="breadcrumb-item" aria-current="page"><a href="">Informasi</a>  </li>
+                            <li class="breadcrumb-item"><a href="#">Peraturan</a></li>
+                            <li class="breadcrumb-item" aria-current="page"><a href="">peraturanlain</a>  </li>
                           </ol>
                       </nav>
                   </p>
@@ -185,8 +185,8 @@
         <!-- END TITLE -->
 
 
-        <!-- Informasi LPSK -->
-        <section class="informasi">
+        <!-- Peraturan -->
+        <section class="peraturan">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4">
@@ -196,70 +196,154 @@
 								<button type="submit"><i class="fa fa-search"></i></button>
 							</form>
 						</div>
-						<div class="categories"><h4 >Categories</h4></div>
-						<div class="list-group list-group-flush">
-							<a href="publikasi-buku.html" class="list-group-item list-group-item-action  ">Buku</a>
-							<a href="publikasi-buletin.html" class="list-group-item list-group-item-action ">Buletin</a>
-							<a href="publikasi-jurnal.html" class="list-group-item list-group-item-action ">Jurnal</a>
-							<a href="publikasi-artikel.html" class="list-group-item list-group-item-action ">Artikel</a>
-							<a href="publikasi-informasilpsk.html" class="list-group-item list-group-item-action active ">Informasi</a>
-							<a href="publikasi-kegiatan.html" class="list-group-item list-group-item-action ">Kegiatan</a>
-							<a href="publikasi-galleryfoto.html" class="list-group-item list-group-item-action ">Gallery Foto</a>
-							<a href="publikasi-video.html" class="list-group-item list-group-item-action ">Video</a>
-							<a href="publikasi-laporan.html" class="list-group-item list-group-item-action ">Laporan</a>
+						<nav>
+							<div class="nav nav-tabs" id="nav-tab" role="tablist" style="width: 100%;">
+							<a class="nav-item nav-link categories active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false"><h4>Peraturan</h4> </a>
+							<a class="nav-item nav-link categories " id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true"><h4>Peraturan LPSK</h4> </a>
+							</div>
+						</nav>
+						<div class="tab-content" id="nav-tabContent">
+							<div class="tab-pane fade  show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+								<div class="list-group list-group-flush">
+									<a href="peraturan-uu.html" class="list-group-item list-group-item-action   ">Undang Undang Terkait</a>
+									<a href="peraturan-pemerintah.html" class="list-group-item list-group-item-action  ">Peraturan Pemerintah</a>
+									<a href="peraturan-presiden" class="list-group-item list-group-item-action ">Peraturan Presiden</a>
+									<a href="peraturan-perma.html" class="list-group-item list-group-item-action  ">Perma</a>
+									<a href="peraturan-peraturanlain.html" class="list-group-item list-group-item-action active ">Peraturan Lain</a>
+								</div>
+							</div>
+							<div class="tab-pane fade " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+								<div class="list-group list-group-flush">
+									<a href="peraturan-lpsk.html" class="list-group-item list-group-item-action  ">Peraturan LPSK</a>
+									<a href="peraturan-ketualpsk.html" class="list-group-item list-group-item-action ">Peraturan dan Keputusan Ketua LPSK</a>
+									<a href="peraturan-sekjenlpsk" class="list-group-item list-group-item-action ">Peraturan dan Keputusan Sekjen LPSK</a>
+									<a href="peraturan-kodeetik.html" class="list-group-item list-group-item-action ">Kode Etik</a>
+								</div>
+							</div>
 						</div>
+						
 					</div>
 					<div class="col-lg-8">
-						<div class="row informasirow mt-5">
-							<div class="col-sm-4">
-								<div class="image-box-all" id="image-box-all">
-									<img class="image-box-cover-all" src="resources/img/buku/jurnal.PNG" alt="">
-								</div>
-							</div>
-							<div class="col-sm-8 mt-2 informasikanan">
-								<h2>29 September 2019</h2>
-								<strong><h1>Laporan Keuangan LPSK Tahun Anggaran 2018</h1></strong>
-								<h3>Ditulis Oleh : Humas LPSK </h3>
-								<a href="publikasi-informasilpsk-blog.html" class="btn btn-primary btn-custom" style="background-color: #707e9d; border-color: #707e9d;">Read More</a>
-								<a href="" class="btn btn-primary btn-custom">Download</a>
-							</div>
+						<div class="row peraturanrow rowmd">
+							<h4 class="">Peraturan - Peraturan Lain</h4>
+							<hr class="mt-2 mb-5">
 						</div>
-						<hr class="informasihr mt-5">		
-						<div class="row informasirow mt-5">
-							<div class="col-sm-4">
-								<div class="image-box-all" id="image-box-all">
-									<img class="image-box-cover-all" src="resources/img/buku/jurnal.PNG" alt="">
-								</div>
-							</div>
-							<div class="col-sm-8 mt-2 informasikanan">
-								<h2>29 September 2019</h2>
-								<strong><h1>Laporan Keuangan LPSK Tahun Anggaran 2018</h1></strong>
-								<h3>Ditulis Oleh : Humas LPSK </h3>
-								<a href="publikasi-informasilpsk-blog.html" class="btn btn-primary btn-custom" style="background-color: #707e9d; border-color: #707e9d;">Read More</a>
-								<a href="" class="btn btn-primary btn-custom">Download</a>
-							</div>
-						</div>
-						<hr class="informasihr mt-5">		
-						<div class="row informasirow mt-5">
-							<div class="col-sm-4">
-								<div class="image-box-all" id="image-box-all">
-									<img class="image-box-cover-all" src="resources/img/buku/jurnal.PNG" alt="">
-								</div>
-							</div>
-							<div class="col-sm-8 mt-2 informasikanan">
-								<h2>29 September 2019</h2>
-								<strong><h1>Laporan Keuangan LPSK Tahun Anggaran 2018</h1></strong>
-								<h3>Ditulis Oleh : Humas LPSK </h3>
-								<a href="publikasi-informasilpsk-blog.html" class="btn btn-primary btn-custom" style="background-color: #707e9d; border-color: #707e9d;">Read More</a>
-								<a href="" class="btn btn-primary btn-custom">Download</a>
-							</div>
-						</div>
-						<hr class="informasihr mt-5">		
-						
-							
+						 
+						<div class="row peraturanrow mt-5">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+									<th scope="col"> No</th>
+									<th scope="col">Nomor</th>
+									<th scope="col">Tahun</th>
+									<th scope="col">Tentang</th>
+									<th scope="col"><i class="fas fa-file-download"></i></th>
+									<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									<th scope="row">1</th>
+									<td>03</td>
+									<td>2017</td>
+									<td>ORGANISASI DAN TATA KERJA SEKRETARIAT JENDERAL 
+											LEMBAGA PERLINDUNGAN SAKSI DAN KORBAN</td>
+									<td><a href="" style="font-size: 1.5em;"><i class="fas fa-file-pdf"></i></a></td>
+									</tr>
+									<tr>
+									<th scope="row">1</th>
+									<td>03</td>
+									<td>2017</td>
+									<td>ORGANISASI DAN TATA KERJA SEKRETARIAT JENDERAL 
+											LEMBAGA PERLINDUNGAN SAKSI DAN KORBAN</td>
+									<td><a href="" style="font-size: 1.5em;"><i class="fas fa-file-pdf"></i></a></td>
+									</tr>
+									<tr>
+									<th scope="row">1</th>
+									<td>03</td>
+									<td>2017</td>
+									<td>ORGANISASI DAN TATA KERJA SEKRETARIAT JENDERAL 
+											LEMBAGA PERLINDUNGAN SAKSI DAN KORBAN</td>
+									<td><a href="" style="font-size: 1.5em;"><i class="fas fa-file-pdf"></i></a></td>
+									</tr>
 									
+								</tbody>
+							</table>
+						</div>
 					</div>
+
+
+					<!-- <div class="col-lg-9 gallery">
+						<div class="container">
+								<h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Gallery</h1>
+							
+								<hr class="mt-2 mb-5">
+							<div class="rowbox">
+								<div id="column" class="column " style="background-size: cover;">
+									<a id="image-box" class="image-box yellow" href="resources/img/banner1.jpg"  data-sub-html=".caption">
+										<img alt="asdasdasdasd"  class="image-box-cover" src="resources/img/banner1.jpg" />
+										<i class="far fa-file-alt"></i>
+										<div class="caption"  >
+												<i class="far fa-file-alt"></i>
+											<h4 >Kepala LPSK</h4>
+											<p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ratione eaque natus provident labore totam esse aspernatur vero voluptate iusto perspiciatis laborum ea expedita id, asperiores fugiat reprehenderit similique praesentium.</p>
+										</div>
+									</a>
+									<a id="image-box" class="image-box" href="resources/img/4k.jpg" data-sub-html=".caption2">
+										<img  class="image-box-cover" src="resources/img/4k.jpg" />
+										<div class="caption2" >
+											<h4 >Caption2for 4kkkkl</h4>
+											<p >Desc2asdsadasd</p>
+										</div>
+									</a>
+									<a id="image-box" class="image-box" href="resources/img/banner2.jpg"  data-sub-html=".caption3">
+										<img alt="asdasdasdasd"  class="image-box-cover" src="resources/img/banner2.jpg" />
+										<div class="caption3"  >
+											<h4 >head 2 banner2 gambar 3</h4>
+											<p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ratione eaque natus provident labore totam esse aspernatur vero voluptate iusto perspiciatis laborum ea expedita id, asperiores fugiat reprehenderit similique praesentium.</p>
+										</div>
+									</a>
+									<a id="image-box" class="image-box" href="https://source.unsplash.com/8mUEy0ABdNE/400x300" data-sub-html=".caption4">
+										<img  class="image-box-cover" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" />
+										<div class="caption4"  >
+											<h4">Caption4</h4>
+											<p >Desc4</p>
+										</div>
+									</a>
+									<a id="image-box" class="image-box" href="https://source.unsplash.com/2gYsZUmockw/400x300" data-sub-html=".caption5">
+										<img  class="image-box-cover" src="https://source.unsplash.com/2gYsZUmockw/400x300" />
+										<div class="caption5"  >
+											<h4 >Caption5</h4>
+											<p >Desc5</p>
+										</div>
+									</a>
+									<a id="image-box" class="image-box" href="resources/img/banner2.jpg"  data-sub-html=".caption3">
+										<img alt="asdasdasdasd"  class="image-box-cover" src="resources/img/banner2.jpg" />
+										<div class="caption3"  >
+											<h4 >head 2 banner2 gambar 3</h4>
+											<p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ratione eaque natus provident labore totam esse aspernatur vero voluptate iusto perspiciatis laborum ea expedita id, asperiores fugiat reprehenderit similique praesentium.</p>
+										</div>
+									</a>
+									<a id="image-box" class="image-box" href="resources/img/banner1.jpg"  data-sub-html=".caption">
+										<img alt="asdasdasdasd"  class="image-box-cover" src="resources/img/banner1.jpg" />
+										<div class="caption"  >
+											<h4 >Kepala LPSK</h4>
+											<p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ratione eaque natus provident labore totam esse aspernatur vero voluptate iusto perspiciatis laborum ea expedita id, asperiores fugiat reprehenderit similique praesentium.</p>
+										</div>
+									</a>
+									
+								</div>		
+							</div>
+						</div>
+					</div> -->
+
+
+
+					
 				</div>
+				
+				
+				
 				<div class="row justify-content-center">
 					<nav aria-label="Page navigation example">
 						<ul class="pagination">
@@ -330,10 +414,19 @@
 		<script src="resources/js/chart.js"></script>
 		<script src="vendors/js/sal.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+		<script src="vendors/lightgallery/js/lightgallery.js"></script>
 		<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
 		<script>
 			sal();
 		</script>
-
+		<!-- Script for LighGallery JS -->
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$("#column").lightGallery({
+				mousewheel: true,
+				thumbnail:true
+			});
+		});
+	</script>
 	</body>
 </html>

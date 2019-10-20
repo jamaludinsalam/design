@@ -341,22 +341,22 @@ width: 100%;
 
 
 
-/* ================================== Sejarah LPSK  ====================================== */
-#sekilaslpsk {
+/* ================================== Prinsip LPSK  ====================================== */
+#informasilpsk {
   height: 100%;
   background-color: #12295C;
   width: 100%;
 }
-.sejarah {
+.informasi {
   padding-top: 5%;
   padding-bottom: 5%;
-  text-align: center;
+  text-align: left;
   color: white;
 }
-.sejarah h1 {
+.informasi h1 {
   margin-bottom: 5%;;
 }
-.sejarah p {
+.informasi p {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   line-height: 1.6em;
@@ -365,7 +365,16 @@ width: 100%;
   padding-left: 15%;
   padding-right: 15%;;
 }
-.sejarah h1::after{
+.informasi li {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.6em;
+  letter-spacing: 1px;
+  font-size: .9em;
+  padding-left: 2%;
+  padding-right: 5%;;
+}
+.informasi h1::after{
   content: '';
   display: block;
   border-bottom: 3px solid white;
@@ -376,45 +385,140 @@ width: 100%;
 }
 
 @media(min-width: 300px){
-  .sejarah{
+  .informasi{
     padding-top: 10%;
     padding-bottom: 10%;
+    padding-left: 10%;
   }
-  .sejarah h1{
+  .informasi h1{
     font-size: 1em;
   }
-  .sejarah h1::after{
+  .informasi h1::after{
     padding-top: 5%;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 0%;
+    margin-right: 75%;
   }
-  .sejarah p {
-    font-size: .7em;
+  .informasi p {
+    font-size: .6em;
     padding-left: 10%;
     padding-right: 10%;;
   }
 }
 @media(min-width: 768px){
-  .sejarah{
+  .informasi{
     padding-top: 15%;
     padding-bottom: 15%;
   }
-  .sejarah h1{
+  .informasi h1{
     font-size: 1.5em;
   }
-  .sejarah h1::after{
-    padding-top: 5%;
-    margin-left: 45%;
-    margin-right: 45%;
+  .informasi h1::after{
+    padding-top: 2%;
+    margin-left: 0%;
+    margin-right: 75%;
   }
-  .sejarah p {
+  .informasi p {
     font-size: .9em;
     padding-left: 10%;
     padding-right: 10%;
   }
 }
 @media(min-width: 992px){
-  .sejarah {
+  .informasi {
+    padding-top: 8%;
+    padding-bottom: 9%;
+  }
+}
+/* ================================== end Sejarah LPSK  ====================================== */
+
+/* ================================== Komitmen LPSK  ====================================== */
+#komitmen {
+  height: 100%;
+  background-color: #E0E0EA;
+  width: 100%;
+}
+.komitmen {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  color: white;
+}
+.komitmen h1 {
+  margin-bottom: 5%;
+  color: rgb(44, 44, 44);
+  text-transform: uppercase;
+  text-align: center;
+}
+.komitmen p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.6em;
+  letter-spacing: 1px;
+  font-size: .9em;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: rgb(44, 44, 44);
+}
+.komitmen li {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.6em;
+  letter-spacing: 1px;
+  font-size: .9em;
+  padding-left: 2%;
+  padding-right: 5%;
+  color: rgb(44, 44, 44);
+}
+.komitmen h1::after{
+  content: '';
+  display: block;
+  border-bottom: 3px solid rgb(44, 44, 44);
+  padding-top: 2%;
+  margin-left: 45%;
+  margin-right: 45%;
+  /* text-shadow: -1px -1px 1px rgba(17, 17, 17, 0.205), 2px 2px 1px #36363663; */
+}
+
+@media(min-width: 300px){
+  .komitmen{
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .komitmen h1{
+    font-size: 1em;
+  }
+  .komitmen h1::after{
+    padding-top: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+  .komitmen p {
+    font-size: .7em;
+    padding-left: 10%;
+    padding-right: 10%;;
+  }
+}
+@media(min-width: 768px){
+  .komitmen{
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  .komitmen h1{
+    font-size: 1.5em;
+  }
+  .komitmen h1::after{
+    padding-top: 2%;
+    margin-left: 45%;
+    margin-right: 45%;
+  }
+  .komitmen p {
+    font-size: .9em;
+    padding-left: 15%;
+    padding-right: 5%;
+  }
+}
+@media(min-width: 992px){
+  .komitmen {
     padding-top: 8%;
     padding-bottom: 9%;
   }
@@ -433,7 +537,10 @@ width: 100%;
 }
 .visi h1 {
   color: rgb(63, 63, 63);
-  letter-spacing: 5px;;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding-top: 10%;
 }
 .visi p {
   font-family: 'Raleway', sans-serif;
@@ -441,6 +548,14 @@ width: 100%;
   font-size: .9em;
   color: #5E5E5E;
   line-height: 1.7em;;
+}
+.visi li{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: .9em;
+  color: #5E5E5E;
+  line-height: 1.7em;
+  margin-left: 5%;
 }
 
 
@@ -473,6 +588,7 @@ width: 100%;
 }
 .visi .hov-img img {
   width: 100%;
+  height: 100px;
 }
 @media(min-width: 300px){
   .visi .how-bor2::before,
@@ -496,6 +612,10 @@ width: 100%;
   }
 }
 @media(min-width: 768px){
+  .visi h1 {
+    font-size: 1.5em;
+    padding-top: 1%;
+  }
   .visi .how-bor2::before,
   .visi .how-bor1::before {
     padding-right: 40%;
@@ -532,111 +652,190 @@ width: 100%;
   width: 100%;
 }
 }
+@media(min-width:992px){
+  .visi h1 {
+    font-size: 1.8em;
+    padding-top: 10%;
+  }
+}
 
 
 /* ================================== End Visi dan Misi ======================================== */
 
 
-/* ============================= Kewenangan LPSK ================================================== */
-
-#kewenangan{
- 
-  height: 100%;
-  background-color: #E0E0EA;
+/* ============================= Pemohon ================================================== */
+#pemohon{
+  padding-top: 8%;
+  padding-bottom: 8%;
   width: 100%;
-  left: 0;
-  margin-top: -10px;
-  margin-bottom: 0px;
+  border: none;
+  background-color: #f5f5f5;
   
 }
-#kewenangan h1 {
-  font-size: 1em;
+.pemohon img{
+  height: 40vh; 
+  object-fit: cover;
+}
+.pemohon .card{
+ margin-bottom: 10px;
+ background-color: #12295C;
+ border: none;
+ 
+}
+.pemohon .card:hover {
+scale: 1.1;
+}
+.pemohon h5 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  color: #000F31;
-  text-transform: uppercase;
+  font-size: 1em;
+  color: white;
 }
-#kewenangan p {
+.pemohon li{
   font-family: 'Raleway', sans-serif;
-  font-size: .7em;
   font-weight: 300;
-  color: #4A4A4A;
-  font-style: italic;
-  /* margin-top: 20%; */
+  font-size: .9em;
+  color: #555;
 }
-#kewenangan a {
-  padding: 10px 20px 10px 20px;
-  font-size: .7em;
-  text-transform: uppercase;
+.shadow-costum {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  transition: .3s;
 }
-#kewenangan .btn {
-  margin-bottom: -150px;
-  border-radius: 20px;
-  background-color: #2D0243;
-  border: #2D0243;
-}
-#kewenangan img{
-  height: 70px;
-  margin-bottom: 20px;
+.shadow-costum:hover{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  transform: scale(1.05);
 }
 
-#kewenangan .center {
-  background-color: #E0E0EA;
-  /* padding: 50px auto auto auto; */
-  /* padding-top: 100px; */
-  /* padding-bottom: 100px; */
-}
+/* ==================================ENd KPemohon =========================================== */
 
-#kewenangan .box {
-  background-color: white;
-  border-radius: 20px;
-  height: 370px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 30px;
-  padding-right: 10px;
-  padding-left: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  
-}
-#kewenangan .container {
+/* pedoman */
+.pedomans{
+  padding-top: 10%;
+  padding-bottom: 10%;
   text-align: center;
+  background-color: #f5f5f5;
 }
-
-.kewenangan-title  {
-  height: 70px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.pedoman {
+  /* border: .5px solid rgb(170, 170, 170); */
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+  border-radius: 10px;
+  transition: .4s;
+  margin-bottom: 10%;
 }
-.kewenangan-content {
-  height: 100px;
-  padding: .75rem 1rem;
-  vertical-align: middle;
-  
+.pedoman:hover{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  transform: scale(1.05);
 }
-.kewenangan p {
-  vertical-align: middle;
-}
-
-.kewenangan h2 {
+.pedoman h1{
   font-family: 'Raleway', sans-serif;
-  font-size: 2em;
-  color: #12295C;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #555;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-.kewenangan h2::after{
-  content: '';
-  display: block;
-  border-bottom: 3px solid #12295C;
-  padding-top: 2%;
-  margin-left: 45%;
-  margin-right: 45%;
-  text-shadow: -1px -1px 1px rgba(17, 17, 17, 0.205), 2px 2px 1px #36363663;
+.pedoman .btn-custom{
+  background-color: #12295C;
+  border: none;
 }
+.pedoman .btn-custom:hover{
+  background-color: rgba(18, 41, 92, 0.85);
+  border: none;
+}
+/* end pedoman */
 
-/* ==================================ENd Kewenangan LPSK =========================================== */
+/* =================================== Standar ============== */
+.standars{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.standar {
+  /* border: .5px solid rgb(170, 170, 170); */
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+  border-radius: 10px;
+  transition: .4s;
+  margin-bottom: 10%;
+}
+.standar:hover{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  transform: scale(1.05);
+}
+.standar h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #555;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.standar .btn-custom{
+  background-color: #12295C;
+  border: none;
+}
+.standar .btn-custom:hover{
+  background-color: rgba(18, 41, 92, 0.85);
+  border: none;
+}
+/* ================================= end Standar ==============  */
 
+/* =================================== Struktur ============== */
+.strukturs{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.struktur {
+  /* border: .5px solid rgb(170, 170, 170); */
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+  border-radius: 10px;
+  transition: .4s;
+  margin-bottom: 10%;
+}
+.struktur:hover{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  transform: scale(1.05);
+}
+.struktur h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #555;
+  padding-top: 5%;
+}
+.struktur p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: .9em;
+  color: #555;
+  padding-bottom: 5%;
+}
+.struktur .btn-custom{
+  background-color: #12295C;
+  border: none;
+}
+.struktur .btn-custom:hover{
+  background-color: rgba(18, 41, 92, 0.85);
+  border: none;
+}
+/* ================================= end struktur ==============  */
 
 .rowbiru{
   background-color: #12295C;
