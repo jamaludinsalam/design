@@ -109,8 +109,18 @@ html {
 }
 
 .dropdown-divider {
-    color: #555;
+  color: #555;
+  margin: 0;
 }
+.dropdown-item {
+padding-top: .6rem;
+padding-bottom: .6rem;
+}
+.dropdown-item.active {
+ background-color: #12295C;
+}
+
+
 
 /* ============== Search ==================== */
 .openBtn {
@@ -317,13 +327,48 @@ html {
 
 
 
-
+#image-box-all{
+  display: inline-block;
+margin: .4vw;
+overflow: hidden; 
+border-radius: 10px ;
+}
+#image-box-all img{
+display: block;
+transition: transform 1s;
+}
+#image-box-all:hover img {
+transform: scale(1.2);
+transform-origin: 50% 50% ;
+}
+.image-box-cover-all{
+object-fit: cover;
+height: 100%;
+width: 100%;
+}
 
 
 /* ================================== Content  ====================================== */
 
 .listberita {
     margin: 10% auto;
+}
+
+.berita{
+  transition: .4s;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+.berita:hover{
+  transform: scale(1.01);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.listberita .card {
+  transition: .4s;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+.listberita .card:hover{
+  transform: scale(1.03);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
 .categories {
@@ -617,6 +662,14 @@ footer .right {
     padding-top: 2%;
     padding-bottom: 2%;
     background-color: rgb(14, 14, 14);
+  }
+  footer img{
+    transition: .3s;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  }
+  footer img:hover{
+    transform: scale(1.3);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
   }
 }
 

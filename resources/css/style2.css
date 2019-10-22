@@ -78,6 +78,7 @@ html {
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 10;
+    
 }
 
 .dropdown-menu a:hover{
@@ -96,6 +97,7 @@ html {
 .nav-item{
   padding-top: 10px;
   padding-bottom: 10px;
+  
 }
 .nav-link {
     color: #1E2A54;
@@ -104,7 +106,20 @@ html {
 
 .dropdown-divider {
     color: #555;
+    margin: 0;
 }
+ .dropdown-item {
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+ }
+ .dropdown-item.active {
+   background-color: #12295C;
+ }
+
+
+
+
+
 
 /* ============== Search ==================== */
 .openBtn {
@@ -326,11 +341,23 @@ html {
   padding-bottom: 20px;
   margin-right: 10px;
   margin-left: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding-right: 10px;
   padding-left: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  transition: .4s;
   
+}
+#features .box:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  transform: scale(1.1);
+}
+#features .btn{
+  transition: .2s;
+}
+#features .btn:hover{
+  transform: scale(1.1);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 #features .container {
   text-align: center;
@@ -466,10 +493,51 @@ html {
   text-align: center;
 }
 .berita-card {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  transition: .4s;
   border: none;
+  width: 100%;
 }
-
-
+.berita-card:hover{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  transform: scale(1.05);
+}
+.berita-card img {
+  height: 20vh; 
+  border-radius: 0;
+  object-fit: cover;
+}
+.app img{
+  transition: .3s;
+}
+.app img:hover{
+  transform: scale(1.03);
+}
+.app2 img{
+  transition: .3s;
+}
+.app2 img:hover{
+  transform: scale(1.03);
+}
+#image-box-all{
+  display: inline-block;
+margin: .4vw;
+overflow: hidden; 
+border-radius: 10px ;
+}
+#image-box-all img{
+display: block;
+transition: transform 1s;
+}
+#image-box-all:hover img {
+transform: scale(1.2);
+transform-origin: 50% 50% ;
+}
+.image-box-cover-all{
+object-fit: cover;
+height: 250px;
+width: 100%;
+}
 
 /* =================== Media Query - List App ===================== */
 
@@ -1467,6 +1535,17 @@ footer .right {
     padding-bottom: 2%;
     background-color: rgb(14, 14, 14);
   }
+  
+  footer img{
+    transition: .3s;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  }
+  footer img:hover{
+    transform: scale(1.3);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  }
+
+ 
 }
 
 /* ================================== END FOOTER ================================== */
